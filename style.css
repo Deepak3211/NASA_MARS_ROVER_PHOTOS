@@ -140,8 +140,10 @@ img:hover{
 
 
   .card {
+    align-items: center;
+    justify-content: space-evenly;
     width: 340px;
-  font-size: medium;
+  font-size: x-small;
   text-align: justify;
 
   }
