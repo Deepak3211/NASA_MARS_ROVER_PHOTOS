@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_data{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+}
+
+ .navigation_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: .5px rgb(114, 230, 250) solid;
+  margin: 20px;
+  /* margin-top: 20px; */
+  padding: 10px;
+  border-radius: 30px;
+  position: fixed;
+  top: -20px;
+  z-index: 1;
+   background-color: aliceblue;
+
+  width: 700px;
+
+}
+.navigation_container:hover{
+  background-color: rgb(226, 232, 238);
+} 
+
+.navigation_items {
+  display: flex;
+  justify-content: center;
+  /* margin: 5px; */
+
+}
+.clickable{
+  border: .5px solid lightgray;
+width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 5px;
+  color: gray;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+
+}
+.clickable:hover{
+  background-color: rgb(240, 159, 60);
+}
+.card {
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  background: white;
+  margin: 10px 10px 20px;
+  border-radius: 30px;
+  border: .5px solid rgb(161, 7, 233);
+
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
+
+  transition: 0.3s;
+}
+
+.image_result{
+  margin: 40px;
+}
+
+ .image_result> a >  img{
+  width: 100%;
+  display: flex;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
+  object-fit: contain;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 5s;
+
+
+}
+img:hover{
+  transform: rotate3d(1,-1,-1, -0.2turn);
+}
+.camera_data, .photo_date{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content:space-evenly;
+  margin: 20px;
+  border: .5px solid rgb(112, 216, 121);
+  border-radius: 30px;
+  padding: 10px;
+ background-color: aliceblue;
+
+}
+
+
+.rover_data{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+  flex-direction: column;
+  padding: 10px;
+  border: .5px solid lightgray;
+  border-radius: 30px;
+  background-color: aliceblue;
+  border-bottom: .5px solid salmon;
+
+}
+.rover_data > p{
+  font-size: x-large;
+  color: rgb(114, 111, 111);
+
+}
+
+
+@media screen and (max-width: 800px) {
+.navigation_container{
+  width: 320px;
+}
+  .image_data{
+    width: 100%;
+  }
+
+
+
+  .card {
+    width: 340px;
+  font-size: medium;
+  text-align: justify;
+
+  }
+  
+  
+}
