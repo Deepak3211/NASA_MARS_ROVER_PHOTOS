@@ -1,6 +1,9 @@
 *{
   margin: 0;
 }
+body{
+  background-image: linear-gradient(to right, rgba(131, 100, 54, 0.534), rgb(123, 199, 209));
+}
 .container{
   display: flex;
   justify-content: center;
